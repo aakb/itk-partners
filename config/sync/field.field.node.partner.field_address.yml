@@ -1,0 +1,66 @@
+uuid: 9a04d0d6-a308-479b-a25c-db5fc6c5e360
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.partner
+  module:
+    - address
+    - geocoder_field
+third_party_settings:
+  geocoder_field:
+    method: none
+    weight: '0'
+    geocode_field: field_further_description
+    reverse_geocode_field: field_location
+    hidden: 0
+    disabled: 0
+    plugins:
+      - openstreetmap
+    dumper: geojson
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: node.partner.field_address
+field_name: field_address
+entity_type: node
+bundle: partner
+label: Address
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    country_code: DK
+    langcode: null
+    administrative_area: ''
+    locality: ''
+    dependent_locality: ''
+    postal_code: ''
+    sorting_code: ''
+    address_line1: ''
+    address_line2: ''
+    organization: ''
+    given_name: ''
+    additional_name: ''
+    family_name: ''
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  fields:
+    locality: locality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    givenName: givenName
+    additionalName: additionalName
+    familyName: familyName
+    administrativeArea: '0'
+    dependentLocality: '0'
+  langcode_override: ''
+field_type: address

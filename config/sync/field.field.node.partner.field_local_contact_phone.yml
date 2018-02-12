@@ -1,0 +1,21 @@
+uuid: 73a5c6bb-26cd-4e7d-a74a-bdd16763dcb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_local_contact_phone
+    - node.type.partner
+  module:
+    - telephone
+id: node.partner.field_local_contact_phone
+field_name: field_local_contact_phone
+entity_type: node
+bundle: partner
+label: 'Local contact phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

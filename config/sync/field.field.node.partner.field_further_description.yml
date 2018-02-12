@@ -1,0 +1,38 @@
+uuid: 7c19462a-33bf-4a39-a2f9-ab3261a1673e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_further_description
+    - node.type.partner
+  module:
+    - geocoder_field
+    - text
+third_party_settings:
+  geocoder_field:
+    method: none
+    weight: '0'
+    geocode_field: field_address
+    reverse_geocode_field: field_location
+    hidden: 0
+    disabled: 0
+    plugins:
+      - openstreetmap
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: node.partner.field_further_description
+field_name: field_further_description
+entity_type: node
+bundle: partner
+label: 'Further description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

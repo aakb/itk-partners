@@ -1,0 +1,20 @@
+uuid: b8c13dc3-8271-4c0a-9f37-43d02289e9bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - partnership_count
+  theme:
+    - bootstrap
+id: partnershipcountblock
+theme: bootstrap
+region: sidebar_second
+weight: -5
+provider: null
+plugin: partnership_count_block
+settings:
+  id: partnership_count_block
+  label: 'Partnership count block'
+  provider: partnership_count
+  label_display: visible
+visibility: {  }

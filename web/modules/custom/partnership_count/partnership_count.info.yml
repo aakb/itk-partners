@@ -1,0 +1,8 @@
+name: Partnership count
+description: Display the number of published partnerships
+core: 8.x
+package: ITK
+dependencies:
+- node
+- block
+type: module

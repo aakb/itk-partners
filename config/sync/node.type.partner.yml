@@ -1,0 +1,11 @@
+uuid: ce967372-4192-4863-ad76-6714ea32a085
+langcode: en
+status: true
+dependencies: {  }
+name: Partnerskab
+type: partner
+description: 'A partner'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,24 @@
+uuid: 5b08ab60-78cd-4813-b151-6267d775164e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.cities_count
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__cities_count_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -3
+provider: null
+plugin: 'views_block:cities_count-block_1'
+settings:
+  id: 'views_block:cities_count-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

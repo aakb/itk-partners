@@ -1,0 +1,24 @@
+uuid: 7fdb9878-e7b5-48d2-bfac-ccdf63366377
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.keywords
+  module:
+    - views
+  theme:
+    - bootstrap
+id: views_block__keywords_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'views_block:keywords-block_1'
+settings:
+  id: 'views_block:keywords-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

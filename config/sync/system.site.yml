@@ -1,0 +1,14 @@
+uuid: 3c632f3d-e8fd-46cd-8a0a-8fb9f1f31209
+name: 'ITK Partners'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /itk-partners-map
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
