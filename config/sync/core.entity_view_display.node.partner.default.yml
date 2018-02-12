@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.partner.field_accept_partnership
     - field.field.node.partner.field_address
     - field.field.node.partner.field_further_description
     - field.field.node.partner.field_keywords
@@ -28,6 +29,16 @@ targetEntityType: node
 bundle: partner
 mode: default
 content:
+  field_accept_partnership:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_address:
     weight: 0
     label: above
