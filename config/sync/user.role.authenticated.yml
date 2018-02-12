@@ -9,4 +9,13 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access content'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'view the administration theme'
