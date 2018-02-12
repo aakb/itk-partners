@@ -1,0 +1,23 @@
+uuid: ce7b0ed2-6a2c-46a2-bfda-19ea0fa3d04f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accept_partnership
+    - node.type.partner
+id: node.partner.field_accept_partnership
+field_name: field_accept_partnership
+entity_type: node
+bundle: partner
+label: 'Accept of partnership registration'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Accept of partnership registration'
+  off_label: 'Off'
+field_type: boolean
