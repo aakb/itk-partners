@@ -1,0 +1,31 @@
+uuid: f0284952-8f7d-4175-83ad-f9a6d1d78799
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_contacts
+    - node.type.partner
+    - paragraphs.paragraphs_type.contact
+  module:
+    - entity_reference_revisions
+id: node.partner.field_partner_contacts
+field_name: field_partner_contacts
+entity_type: node
+bundle: partner
+label: 'Partner contacts'
+description: 'The external contacts of the project'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact: contact
+    target_bundles_drag_drop:
+      contact:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

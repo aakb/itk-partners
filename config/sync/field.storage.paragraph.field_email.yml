@@ -1,12 +1,12 @@
-uuid: 12937faa-bfe0-4234-87ef-8a93301258a7
+uuid: c1c6a7f8-babf-4e54-8c3e-7e3d0036543c
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_local_contact_email
-field_name: field_local_contact_email
-entity_type: node
+    - paragraphs
+id: paragraph.field_email
+field_name: field_email
+entity_type: paragraph
 type: email
 settings: {  }
 module: core

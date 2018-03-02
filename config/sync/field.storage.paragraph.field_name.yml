@@ -1,12 +1,12 @@
-uuid: 11c814c6-4ae6-4850-b557-a92895d3b37b
+uuid: ed3960c8-05ce-4bf7-88e2-1851559b6a52
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_local_contact_name
-field_name: field_local_contact_name
-entity_type: node
+    - paragraphs
+id: paragraph.field_name
+field_name: field_name
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

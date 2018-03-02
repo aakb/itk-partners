@@ -30,6 +30,7 @@
         "drupal/geofield": "^1.0@beta",
         "drupal/geofield_map": "^1.40",
         "drupal/leaflet": "^1.0@beta",
+        "drupal/paragraphs": "^1.2",
         "drush/drush": "^9.0.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

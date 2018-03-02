@@ -7,10 +7,9 @@ dependencies:
     - field.field.node.partner.field_address
     - field.field.node.partner.field_further_description
     - field.field.node.partner.field_keywords
-    - field.field.node.partner.field_local_contact_email
-    - field.field.node.partner.field_local_contact_name
-    - field.field.node.partner.field_local_contact_phone
+    - field.field.node.partner.field_local_contact
     - field.field.node.partner.field_location
+    - field.field.node.partner.field_partner_contacts
     - field.field.node.partner.field_status
     - node.type.partner
   module:
@@ -18,7 +17,7 @@ dependencies:
     - field_layout
     - geofield_map
     - layout_discovery
-    - telephone
+    - paragraphs
     - text
 third_party_settings:
   field_layout:
@@ -60,31 +59,22 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
     region: content
-  field_local_contact_email:
+  field_local_contact:
+    type: paragraphs
     weight: 7
     settings:
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: contact
     third_party_settings: {  }
-    type: email_default
-    region: content
-  field_local_contact_name:
-    weight: 6
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_local_contact_phone:
-    weight: 8
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
     region: content
   field_location:
-    weight: 9
+    weight: 8
     settings:
       map_library: gmap
       map_type_google: roadmap
@@ -112,6 +102,20 @@ content:
       zoom_level: 5
     third_party_settings: {  }
     type: geofield_map
+    region: content
+  field_partner_contacts:
+    type: paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: contact
+    third_party_settings: {  }
     region: content
   field_status:
     weight: 3

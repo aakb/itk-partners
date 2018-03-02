@@ -1,13 +1,13 @@
-uuid: 63fb88d5-ab66-4a89-92a9-5250cb8a1066
+uuid: 246f8547-2719-43be-ad00-6065c57863ec
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - paragraphs
     - telephone
-id: node.field_local_contact_phone
-field_name: field_local_contact_phone
-entity_type: node
+id: paragraph.field_phone
+field_name: field_phone
+entity_type: paragraph
 type: telephone
 settings: {  }
 module: telephone

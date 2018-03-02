@@ -1,0 +1,31 @@
+uuid: c398d759-f47d-44e1-b36f-8907550fb40e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_local_contact
+    - node.type.partner
+    - paragraphs.paragraphs_type.contact
+  module:
+    - entity_reference_revisions
+id: node.partner.field_local_contact
+field_name: field_local_contact
+entity_type: node
+bundle: partner
+label: 'Local contacts'
+description: 'The local contacts of the project'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact: contact
+    target_bundles_drag_drop:
+      contact:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
