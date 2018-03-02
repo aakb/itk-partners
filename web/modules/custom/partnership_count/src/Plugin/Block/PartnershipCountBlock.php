@@ -31,6 +31,9 @@ class PartnershipCountBlock extends BlockBase {
     return array(
       '#type' => 'markup',
       '#markup' => $count,
+      '#cache' => [
+        'disabled' => TRUE,
+      ],
     );
   }
 }
