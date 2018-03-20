@@ -1,0 +1,28 @@
+uuid: a6d57c8e-4dee-4be8-90fc-d838c3541f21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projects
+    - node.type.partner
+    - node.type.project
+id: node.partner.field_projects
+field_name: field_projects
+entity_type: node
+bundle: partner
+label: Projects
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

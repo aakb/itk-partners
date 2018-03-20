@@ -1,0 +1,12 @@
+uuid: 3fa6e05d-0187-4282-9c18-ccc12759ceb5
+langcode: en
+status: true
+dependencies: {  }
+id: partner_and_project
+label: 'Partner and project'
+enabled: true
+first_field: field_partners
+second_field: field_projects
+bundles:
+  node:
+    - '*'

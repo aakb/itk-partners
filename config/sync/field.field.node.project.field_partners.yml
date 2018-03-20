@@ -1,0 +1,28 @@
+uuid: 2cfddd51-722e-4327-b726-ff64f51a2d2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partners
+    - node.type.partner
+    - node.type.project
+id: node.project.field_partners
+field_name: field_partners
+entity_type: node
+bundle: project
+label: Partners
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partner: partner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
