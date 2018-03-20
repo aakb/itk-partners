@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.partner.field_local_contact
     - field.field.node.partner.field_location
     - field.field.node.partner.field_partner_contacts
+    - field.field.node.partner.field_projects
     - field.field.node.partner.field_status
     - node.type.partner
   module:
@@ -116,6 +117,15 @@ content:
       form_display_mode: default
       default_paragraph_type: contact
     third_party_settings: {  }
+    region: content
+  field_projects:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_status:
     weight: 3

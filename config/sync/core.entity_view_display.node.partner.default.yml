@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.partner.field_local_contact
     - field.field.node.partner.field_location
     - field.field.node.partner.field_partner_contacts
+    - field.field.node.partner.field_projects
     - field.field.node.partner.field_status
     - node.type.partner
   module:
@@ -108,6 +109,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_projects:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_status:
     weight: 4
