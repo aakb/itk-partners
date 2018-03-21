@@ -4,15 +4,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_department
+    - field.field.node.project.field_funding_aak
+    - field.field.node.project.field_funding_self_finance
+    - field.field.node.project.field_funding_total
+    - field.field.node.project.field_partners
+    - field.field.node.project.field_program
+    - field.field.node.project.field_short_description
+    - field.field.node.project.field_status
+    - field.field.node.project.field_timeline
     - node.type.project
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.project.teaser
 targetEntityType: node
 bundle: project
@@ -21,4 +24,13 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_department: true
+  field_funding_aak: true
+  field_funding_self_finance: true
+  field_funding_total: true
+  field_partners: true
+  field_program: true
+  field_short_description: true
+  field_status: true
+  field_timeline: true

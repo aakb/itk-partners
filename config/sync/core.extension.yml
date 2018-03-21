@@ -7,15 +7,16 @@ module:
   charts_c3: 0
   charts_google: 0
   charts_highcharts: 0
+  ckeditor: 0
   contextual: 0
   csv_serialization: 0
   dblog: 0
   dynamic_page_cache: 0
+  editor: 0
   entity_reference: 0
   entity_reference_revisions: 0
   field: 0
   field_group: 0
-  field_layout: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -41,6 +42,7 @@ module:
   telephone: 0
   text: 0
   toolbar: 0
+  tvi: 0
   update: 0
   user: 0
   views_data_export: 0

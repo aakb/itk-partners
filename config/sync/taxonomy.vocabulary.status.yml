@@ -2,7 +2,7 @@ uuid: 86baafb6-aaff-4126-b166-070e467b1fe0
 langcode: en
 status: true
 dependencies: {  }
-name: Status
+name: 'Partner status'
 vid: status
 description: ''
 hierarchy: 0

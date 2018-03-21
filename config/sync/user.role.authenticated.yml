@@ -30,5 +30,6 @@ permissions:
   - 'edit any project content'
   - 'edit own partner content'
   - 'edit own project content'
+  - 'use text format simple_html'
   - 'view own unpublished content'
   - 'view the administration theme'

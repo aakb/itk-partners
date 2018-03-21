@@ -1,0 +1,9 @@
+uuid: edf3b784-8c00-412c-909d-48379ac70d70
+langcode: en
+status: true
+dependencies: {  }
+name: 'ITK Departments'
+vid: itk_departments
+description: ''
+hierarchy: 0
+weight: 0

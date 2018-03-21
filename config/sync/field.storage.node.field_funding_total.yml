@@ -1,0 +1,20 @@
+uuid: aabb4168-4497-451d-8da2-00e89442acb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_funding_total
+field_name: field_funding_total
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

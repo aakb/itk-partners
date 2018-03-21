@@ -15,15 +15,48 @@ dependencies:
     - node.type.partner
   module:
     - address
-    - field_layout
+    - field_group
     - geofield_map
-    - layout_discovery
     - paragraphs
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
+  field_group:
+    group_partner_contacts:
+      children:
+        - field_partner_contacts
+      parent_name: ''
+      weight: 8
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Partner contacts'
+    group_local_contacts:
+      children:
+        - field_local_contact
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Local contacts'
+    group_location:
+      children:
+        - field_location
+      parent_name: ''
+      weight: 9
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Location
 id: node.partner.default
 targetEntityType: node
 bundle: partner
@@ -37,14 +70,14 @@ content:
     type: boolean_checkbox
     region: content
   field_address:
-    weight: 4
+    weight: 5
     settings:
       default_country: DK
     third_party_settings: {  }
     type: address_default
     region: content
   field_further_description:
-    weight: 5
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -62,7 +95,7 @@ content:
     region: content
   field_local_contact:
     type: paragraphs
-    weight: 7
+    weight: 9
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -119,7 +152,7 @@ content:
     third_party_settings: {  }
     region: content
   field_projects:
-    weight: 26
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -128,7 +161,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_status:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select

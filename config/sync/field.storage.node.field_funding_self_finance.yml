@@ -1,0 +1,20 @@
+uuid: 1f16935e-2c2d-40e6-a629-07974f07b86d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_funding_self_finance
+field_name: field_funding_self_finance
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

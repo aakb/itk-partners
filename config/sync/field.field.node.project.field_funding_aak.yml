@@ -1,0 +1,23 @@
+uuid: 3c46d5c6-93b0-4123-8d70-68b4224917ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_funding_aak
+    - node.type.project
+id: node.project.field_funding_aak
+field_name: field_funding_aak
+entity_type: node
+bundle: project
+label: 'AAK Part'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
