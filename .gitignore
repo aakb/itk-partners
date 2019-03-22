@@ -19,3 +19,7 @@
 # Local setup files
 services.local.yml
 settings.local.php
+
+# Ignore pull script and remote env
+.env-remote
+.pull-prod
